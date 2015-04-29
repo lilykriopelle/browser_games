@@ -1,0 +1,70 @@
+html, body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  color: inherit;
+
+  background: transparent;
+}
+
+.towers {
+  width: 610px;
+  display: block;
+  margin: auto;
+}
+
+li {
+  width: 90px;
+  height: 40px;
+  background: transparent;
+  color: transparent;
+  border: 5px solid transparent;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  float: left;
+  margin: 50px;
+  cursor: pointer;
+  border: 1px solid black;
+  transform: rotate(180deg);
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+h1 {
+  display: block;
+  font-size: 60px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+ul .disk1 {
+  border: 5px solid black;
+  background: yellow;
+  width: 30px;
+}
+
+ul .disk2 {
+  border: 5px solid black;
+  background: orange;
+  width: 50px;
+}
+
+ul .disk3 {
+  border: 5px solid black;
+  background: red;
+  width: 70px;
+}
+
+.towers .highlighted {
+  background: pink;
+}

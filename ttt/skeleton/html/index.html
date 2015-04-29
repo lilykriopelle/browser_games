@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="../css/ttt.css">
+  </head>
+  <body>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../../ttt-core-solution/ttt-core.js"></script>
+    <script src="../js/ttt-view.js"></script>
+
+    <script>
+      $(document).ready( function() {
+        var view = new TTT.View(new TTT.Game, $(".grid"));
+
+        view.setupBoard();
+        view.bindEvents();
+      });
+    </script>
+    <h1>Tic-Tac-Toe</h1>
+
+    <main class="grid">
+
+    </main>
+
+  </body>
+</html>
